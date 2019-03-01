@@ -1,0 +1,17 @@
+<!-- <p>
+  dash-board works!
+</p> -->
+<!-- DashBoardComponent have two childs components -->
+<div class="flex-container">
+  <div>
+    <!-- we sent userList array as input to app-user-list component -->
+    <app-user-list [users]="userList"></app-user-list>
+  </div>
+  <div>
+    <!-- we say to DashBoardComponent that you will recive tow outputs -->
+    <app-edit-users (addUser)="addUserName($event)" (removeUser)="removeUserName($event)"></app-edit-users>
+  </div>
+
+</div>
+
+<!-- (onAddName)="AddName($event)" [name]="name" -->
